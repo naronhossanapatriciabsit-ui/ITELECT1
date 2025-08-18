@@ -1,0 +1,29 @@
+    public static void main(String[] args) {
+        
+        int num1 = 10;
+        int num2 = 5;
+        
+
+        
+        result = 10 + 5;  
+        System.out.println("Addition: 10 + 5 + result);
+
+        result = 10 - 5; 
+        System.out.println("Subtraction: 10 - 5 + result);
+
+        result = 10 * 5;
+        System.out.println("Multiplication: 10 * 5 + result);
+
+        result = 10 / 5;  
+        System.out.println("Division: 10 / 5 + result);
+
+        // If-Else Condition
+        if (10 > 5) {
+            System.out.println(10 + " is greater than " + 5);
+        } else if (10 < 5) {
+            System.out.println(10 + " is less than " + 5);
+        } else {
+            System.out.println(10 + " is equal to " + 5);
+        }
+    }
+}
