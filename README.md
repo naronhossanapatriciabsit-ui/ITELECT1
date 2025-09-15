@@ -1,1 +1,0 @@
-# ITELECT1
