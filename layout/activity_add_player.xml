@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/add_bg">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add players"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/gliker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <LinearLayout
+        android:id="@+id/inputRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/add_box"
+            android:padding="12dp"
+            android:hint="Enter name"
+            android:fontFamily="@font/fredoka"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/add_button"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listPlayers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/btnStart"
+        android:layout_below="@id/inputRow"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long press a player to delete"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="15sp"
+        android:textColor="#AAFFFFFF"
+
+        android:layout_above="@id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:textStyle="bold"
+        android:fontFamily="@font/fredoka"
+        android:textSize="20sp"
+        android:background="@drawable/start_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp" />
+
+</RelativeLayout>
