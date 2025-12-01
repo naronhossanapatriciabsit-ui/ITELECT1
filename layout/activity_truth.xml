@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/truth_page">
+
+    <TextView
+        android:id="@+id/truthQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sample Question Goes Here"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:fontFamily="@font/fredoka"
+        android:padding="20dp"
+        android:maxLines="6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/truthBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp" />
+
+    <Button
+        android:id="@+id/truthBtn"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="DONE"
+        android:textAllCaps="true"
+        android:backgroundTint="#0D2A5A"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/fredoka"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="80dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
